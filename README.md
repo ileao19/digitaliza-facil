@@ -48,7 +48,7 @@ A plataforma disponibiliza orientações passo a passo, vídeos explicativos e d
 * CSS3
 * JavaScript
 * Font Awesome
-* GitHub
+* GitHub Pages
 * YouTube Shorts
 
 ---
@@ -73,10 +73,10 @@ Digitaliza Facil/
 │   └── google.mp4
 │
 └── docs/
-    └── diagrama-digitaliza-facil.png
-    └── tela-inicial.png
-    └── tela-email.png
-    └── tela-whatsapp.png
+    ├── diagrama-digitaliza-facil.png
+    ├── tela-inicial.png
+    ├── tela-email.png
+    ├── tela-whatsapp.png
     └── tela-google.png
 ```
 
@@ -86,7 +86,12 @@ Digitaliza Facil/
 
 O fluxo de utilização da plataforma Digitaliza Fácil é apresentado no diagrama abaixo:
 
-![Diagrama de Funcionamento](docs/diagrama-digitaliza-facil.png)
+
+<p align="center">
+  <img src="docs/diagrama-digitaliza-facil.png" width="850">
+</p>
+
+
 
 ---
 
@@ -94,19 +99,36 @@ O fluxo de utilização da plataforma Digitaliza Fácil é apresentado no diagra
 
 ### Página Inicial
 
-![Página Inicial](docs/tela-inicial.png)
+
+<h3 align="center">Página Inicial</h3>
+
+<p align="center">
+  <img src="docs/tela-inicial.png" width="850">
+</p>
 
 ### Tutorial Gmail
 
-![Tutorial Gmail](docs/tela-email.png)
+<h3 align="center">Página Inicial</h3>
+
+<p align="center">
+  <img src="docs/tela-email.png" width="850">
+</p>
 
 ### Tutorial WhatsApp
 
-![Tutorial WhatsApp](docs/tela-whatsapp.png)
+<h3 align="center">Página Inicial</h3>
+
+<p align="center">
+  <img src="docs/tela-whatsapp.png" width="850">
+</p>
 
 ### Pesquisa no Google
 
-![Pesquisa no Google](docs/tela-google.png)
+<h3 align="center">Página Inicial</h3>
+
+<p align="center">
+  <img src="docs/tela-google.png" width="850">
+</p>
 
 ---
 
@@ -127,12 +149,28 @@ O projeto foi implementado e testado na cidade de Sete Lagoas/MG, com foco na pr
 
 ---
 
+
+## Acesso ao Projeto
+
+🔗 Site Online: https://ileao19.github.io/digitaliza-facil/
+
+---
+
 ## Resultados Esperados
 
 * Maior autonomia digital dos usuários;
 * Aprendizado de ferramentas essenciais para comunicação e pesquisa;
 * Incentivo ao uso seguro da internet;
 * Ampliação do acesso à informação por meio da tecnologia.
+
+---
+
+## Demonstração
+
+O projeto possui vídeos demonstrativos de utilização da plataforma em computador e dispositivo móvel, apresentando o funcionamento das funcionalidades e a aplicação prática da solução desenvolvida.
+
+🎥 Vídeo demonstrativo:
+[Assistir vídeo](COLE_AQUI_O_LINK_DO_DRIVE)
 
 ---
 
