@@ -1,0 +1,354 @@
+:root {
+    --bg: #f4f6f8;
+    --text: #1f2937;
+    --primary: #2d89ef;
+    --primary-dark: #1f6fd1;
+    --card: #ffffff;
+    --dark: #222;
+    --menu: #333;
+    --menu-hover: #444;
+    --border: rgba(255, 255, 255, 0.18);
+    --shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    --tip-bg: #eaf3ff;
+    --tip-border: #2d89ef;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --primary: #4da3ff;
+    --primary-dark: #2d89ef;
+    --card: #1e293b;
+    --dark: #111827;
+    --menu: #111827;
+    --menu-hover: #1f2937;
+    --border: rgba(255, 255, 255, 0.12);
+    --shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    --tip-bg: #152238;
+    --tip-border: #4da3ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    padding: 22px 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border: none;
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.menu-area {
+    background: var(--menu);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.menu-btn {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--menu);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.menu-btn:hover {
+    background: var(--menu-hover);
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    background: var(--menu);
+}
+
+#menu.show {
+    display: flex;
+}
+
+#menu a {
+    color: #fff;
+    padding: 13px 16px;
+    text-decoration: none;
+    border-top: 1px solid var(--border);
+    transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+#menu a:hover {
+    background: var(--menu-hover);
+    padding-left: 20px;
+}
+
+main {
+    padding: 18px 15px 24px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.25s ease;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+body.dark .card {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.card h2,
+.card h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ul, ol {
+    padding-left: 22px;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    color: var(--primary);
+}
+
+.tip {
+    background: var(--tip-bg);
+    border-left: 4px solid var(--tip-border);
+    padding: 12px 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
+    transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.video-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+    margin-top: 12px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.short-video {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+.short-video video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+.video-container {
+    text-align: center;
+}
+
+.youtube-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto 0;
+}
+
+.youtube-btn:hover {
+    background: #cc0000;
+    color: #ffffff;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.video-box-short {
+    max-width: 350px;
+    margin: 20px auto;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.video-box-short iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+video {
+    display: block;
+}
+
+.video-button {
+    display: inline-block;
+    background: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.video-button:hover {
+    opacity: 0.9;
+}
+
+
+footer {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    text-align: center;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    #menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu a {
+        border-top: none;
+        border-right: 1px solid var(--border);
+    }
+
+    #menu a:last-child {
+        border-right: none;
+    }
+
+    main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px 16px 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
