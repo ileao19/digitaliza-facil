@@ -97,7 +97,7 @@ O fluxo de utilização da plataforma Digitaliza Fácil é apresentado no diagra
 
 ## Capturas de Tela
 
-### Página Inicial
+###
 
 
 <h3 align="center">Página Inicial</h3>
@@ -106,25 +106,25 @@ O fluxo de utilização da plataforma Digitaliza Fácil é apresentado no diagra
   <img src="docs/tela-inicial.png" width="850">
 </p>
 
-### Tutorial Gmail
+### 
 
-<h3 align="center">Página Inicial</h3>
+<h3 align="center">Tutorial Gmail</h3>
 
 <p align="center">
   <img src="docs/tela-email.png" width="850">
 </p>
 
-### Tutorial WhatsApp
+### 
 
-<h3 align="center">Página Inicial</h3>
+<h3 align="center">Tutorial WhatsApp</h3>
 
 <p align="center">
   <img src="docs/tela-whatsapp.png" width="850">
 </p>
 
-### Pesquisa no Google
+### 
 
-<h3 align="center">Página Inicial</h3>
+<h3 align="center">Pesquisa no Google</h3>
 
 <p align="center">
   <img src="docs/tela-google.png" width="850">
